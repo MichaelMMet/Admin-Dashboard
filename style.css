@@ -1,0 +1,120 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:1fr 4fr ;
+}
+
+.header{
+    background-color: aqua;
+    grid-column: 2/4;
+    height: 200px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.top-header{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.top-left-header{
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.top-right-header{
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.bottom-header{
+    align-items: center;
+
+display: grid;
+grid-template-columns: 2fr  2fr;
+
+}
+.bottom-left-header{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: brown;
+}
+
+.bottom-right-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: brown;
+}
+
+button{
+    width: 100px;
+    height: 60px;
+    background-color: lightblue;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar{
+background-color: blue;
+/*
+display: grid;
+grid-template-columns: 10px;
+gap: 10px;
+justify-content: ce;
+align-items: flex-start;
+*/
+display: flex;
+flex-direction: column;
+
+
+grid-row: 1/4;
+}
+
+.dash-logo{
+    font-size: 30px;
+    color: white;
+}
+
+.settings{
+    margin:20px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.setting{
+    height: 50px;
+    width: 100px;
+    color: white;
+    margin:20px ;
+}
+
+.um{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    margin:20px ;
+    color: white;
+}
+
+.main-body{
+background-color: bisque;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+
+.project{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: lightcyan;
+}
