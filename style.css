@@ -1,16 +1,17 @@
-body{
-    font-family: 'Oswald', sans-serif;
+body {
+    font-family: 'Noto Sans', sans-serif;
+
 
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows:1fr 4fr ;
+    grid-template-rows: 1fr 4fr;
 }
 
-.header{
-    background-color: aqua;
+.header {
+    background-color: #f5f3ff;
     grid-column: 2/4;
     height: 200px;
 
@@ -18,33 +19,59 @@ body{
     grid-template-columns: 1fr;
 }
 
-.user-name{
-    font-size: 20px;
-}
-
-.searchy{
+.user-name {
+    font-size: 17px;
     justify-self: start;
 }
 
-.fa-magnifying-glass{
-    justify-self: end;
+.profile-picture{
+    width: 60px;
+    height:60px;
+    border-radius: 40px;
 }
 
-.top-header{
-    background-color: aquamarine;
+.searchy {
+    justify-self: start;
+}
+
+.fa-magnifying-glass {
+    margin-right: 20px;
+    justify-self: end;
+
+}
+
+.fa-bell{
+    justify-self: center;
+}
+
+.searchy{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.top-header {
+
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
 
-.top-left-header{
+.top-left-header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /*
     align-items: center;
     display: grid;
     justify-content: start;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
+    */
 }
 
-.top-right-header{
+.top-right-header {
     align-items: center;
 
     display: grid;
@@ -52,99 +79,207 @@ body{
 }
 
 
-.bottom-header{
+.bottom-header {
     align-items: center;
-
-display: grid;
-grid-template-columns: 2fr  2fr;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 
 }
-.bottom-left-header{
+
+.bottom-left-header {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.bottom-right-header{
+.bottom-right-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-button{
+button {
     width: 100px;
     height: 50px;
     background-color: #7c3aed;
     border-radius: 50px;
     color: white;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+
 }
 
-.sidebar{
-background-color: blue;
-/*
+.new{
+    justify-self: end;
+}
+
+.share{
+    justify-self: start;
+}
+
+.upload{
+    justify-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+    background-color: #7c3aed;
+    /*
 display: grid;
 grid-template-columns: 10px;
 gap: 10px;
 justify-content: ce;
 align-items: flex-start;
 */
-display: flex;
-flex-direction: column;
-
-
-grid-row: 1/4;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/4;
 }
 
-.dash-logo{
+.sidebar-duo {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-house {
+    position: relative;
+    color: white;
+    top: 30px;
+}
+
+.fa-user {
+    position: relative;
+    color: white;
+    top: 30px;
+}
+
+.fa-messages {
+    position: relative;
+    color: white;
+    top: 30px;
+}
+
+.fa-rectangle-history {
+    position: relative;
+    color: white;
+    top: 30px;
+}
+
+
+.dash-logo {
     font-size: 30px;
     color: white;
 }
 
-.settings{
-    margin:20px ;
+.settings {
+    margin: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.setting{
+.setting {
     height: 50px;
     width: 100px;
     color: white;
-    margin:20px ;
+    margin: 20px;
 }
 
-.um{
+.um {
     width: 100px;
     height: 50px;
     font-size: 20px;
-    margin:20px ;
+    margin: 20px;
     color: white;
+    align-self: center;
 }
 
-.main-body{
-display: grid;
-grid-template-columns: 2fr 1fr;
 
-}
 
-.my-projects{
-background-color: bisque;
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr;
-}
 
-.main-body-left{
+
+
+
+.main-body {
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 1fr 0fr;
+    background-color: #c4b5fd;
 
+}
+
+.my-projects {
+    background-color: #c4b5fd;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main-body-left {
+    display: grid;
+    grid-row: 1fr 1fr;
 }
 
 
 
-.project{
+.announcment {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+    border-radius:10px ;
+}
+
+.announce-head {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.announce-info {
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.project {
     margin: 10px;
-    width: 200px;
-    height: 200px;
-    background-color: lightcyan;
+    width: 330px;
+    height: 230px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.project-header {
+    margin-left: 10px;
+}
+
+.project-info {
+    margin: 10px;
+
+}
+
+
+.social-logo{
+    width: 60;
+    height: 60;
+    border-radius: 40px;
+}
+
+.trend{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: white;
+}
+
+.social{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
 }

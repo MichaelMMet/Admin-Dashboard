@@ -12,22 +12,42 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Oswald&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
 
         <div class="sidebar">
-            <h1 class="dash-logo">DashBoard</h1>
-            <div class="um">Home</div>
-            <div class="um">Profile</div>
-            <div class="um">Messages</div>
-            <div class="um">sHistory</div>
-            <div class="um">sadsa</div>
-            <div class="um">ddsa </div>
+            <div class="sidebar-duo">
+                <h1 class="dash-logo">DashBoard</h1>
+            </div>
+            <div class="sidebar-duo">
+                <i class="fa-solid fa-house"></i>
+                <div class="um">Home</div>
+            </div>
+            <div class="sidebar-duo">
+                <i class="fa-solid fa-user"></i>
+                <div class="um">Profile</div>
+            </div>
+            <div class="sidebar-duo">
+                <i class="fa-solid fa-messages"></i>
+                <div class="um">Messages</div>
+            </div>
+            <div class="sidebar-duo">
+                <i class="fa-duotone fa-rectangle-history"></i>
+                <div class="um">History</div>
+            </div>
+            <div class="sidebar-duo">
+                <div class="um">sadsa</div>
+            </div>
+            <div class="sidebar-duo">
+                <div class="um">ddsa </div>
+            </div>
+
             <div class=settings>
+
                 <div class="setting">Settings</div>
                 <div class="setting">Support</div>
                 <div class="setting">Privacy</div>
@@ -37,25 +57,31 @@
         <div class=header>
             <div class="top-header">
                 <div class="top-left-header">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
 
-                    <input type="text" id ="search" name ="searched" class ="searchy">
+                        <input type="text" id="search" name="searched" class="searchy">
+                    </div>
                 </div>
                 <div class="top-right-header">
-                    <div>bell</div>
-                    <div>icon</div>
-                    <div>name</div>
+                    <i class="fa-regular fa-bell"></i>
+                    <img class="profile-picture"
+                        src="/home/michael/repos/Admin-Dashboard/pictures/Mochi-Ice-cream-WS-Thumbnail-500x500.jpeg"
+                        alt="profile picture">
+                    <div class="user-name">Michael Metcalf</div>
                 </div>
             </div>
             <div class="bottom-header">
                 <div class="bottom-right-header">
-                    <div>icon</div>
-                    <hi class = "user-name">Michael Metcalf</hi>
+                    <img class="profile-picture"
+                        src="/home/michael/repos/Admin-Dashboard/pictures/Mochi-Ice-cream-WS-Thumbnail-500x500.jpeg"
+                        alt="profile picture">
+                    <hi class="user-name">Michael Metcalf</hi>
                 </div>
                 <div class="bottom-left-header">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                    <button class="new">New</button>
+                    <button class="upload">Upload</button>
+                    <button class="share">Share</button>
                 </div>
             </div>
         </div>
@@ -63,26 +89,75 @@
 
         <div class="main-body">
             <div class="my-projects">
-                <div class="project">blaaaah</div>
-                <div class="project">sasadsadas</div>
-                <div class="project">saddsad</div>
-                <div class="project">assadsa</div>
-                <div class="project">sadsa</div>
-                <div class="project">sdaasda</div>
+                <div class="project">
+                    <h3 class="project-header">Cool project</h1>
+                        <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-header">Cool project</h1>
+                        <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-header">Cool project</h1>
+                        <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-header">Cool project</h1>
+                        <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-header">Cool project</h1>
+                        <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
+                </div>
+                <div class="project">
+                    <h3 class="project-header">Cool project</h1>
+                        <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
+                </div>
             </div>
 
             <div class="main-body-left">
                 <div class="annoucements">
-                    <h1>Annoucements</h1>
-                    <div class="annoucement">
+                    <h3>Annoucements</h1>
+                        <div class="announcment">
+                            <div>
+                                <h3 class="announce-head">Site info</h3>
+                                <p class="announce-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                            </div>
+                            <div>
+                                <h3 class="announce-head">Community</h3>
+                                <p class="announce-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                            </div>
+                            <div>
+                                <h3 class="announce-head">Privacy policy</h3>
+                                <p class="announce-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+                            </div>
 
-                    </div>
+                        </div>
                 </div>
-                <div class ="Trending">
-                    <h1>Trending</h1>
-                    <div class ="trend">
-
-                    </div>
+                <div class="Trending">
+                    <h3>Other links</h1>
+                        <div class="trend">
+                            <div class="social">
+                                <img class="social-logo"
+                                    src="/home/michael/repos/Admin-Dashboard/pictures/GitHub-Mark/PNG/GitHub-Mark-64px.png"
+                                    alt="Github logo">
+                                    <p> Another place to view my projects</p>
+                            </div>
+                            <div class="social">
+                                <img class="social-logo" src="/home/michael/repos/Admin-Dashboard/pictures/174857.png"
+                                    alt="LinkedIn logo">
+                                    <p>My LinkedIn profile</p>
+                            </div>
+                            <div class="social">
+                                    <p>Twitter if you use it</p>
+                            </div>
+                        </div>
                 </div>
             </div>
 
