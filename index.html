@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Oswald&family=Roboto&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Oswald&family=Roboto&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
 </head>
 
@@ -20,24 +20,25 @@
     <div class="container">
 
         <div class="sidebar">
-            <div class="sidebar-duo">
-                <h1 class="dash-logo">DashBoard</h1>
+            <div class="sidebar-duo-dash">
+                <i class="fa-solid fa-computer"></i>
+                <a class="um" href="#">Dashboard</a>
             </div>
             <div class="sidebar-duo">
                 <i class="fa-solid fa-house"></i>
-                <div class="um">Home</div>
+                <a class="um" href="#">Home</a>
             </div>
             <div class="sidebar-duo">
                 <i class="fa-solid fa-user"></i>
-                <div class="um">Profile</div>
+                <a class="um" href="#">Profile</a>
             </div>
             <div class="sidebar-duo">
                 <i class="fa-regular fa-message"></i>
-                <div class="um">Messages</div>
+                <a class="um" href="#">Messages</a>
             </div>
             <div class="sidebar-duo">
-                <i class="fa-solid fa-clock-rotate-left"></i> 
-                <div class="um">History</div>
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <a class="um" href="#">History</a>
             </div>
             <div class="sidebar-duo">
             </div>
@@ -46,9 +47,9 @@
 
             <div class=settings>
 
-                <div class="setting">Settings</div>
-                <div class="setting">Support</div>
-                <div class="setting">Privacy</div>
+                <a class="setting" href="#">Settings</a>
+                <a class="setting" href="#">Support</a>
+                <a class="setting" href="#">Privacy</a>
             </div>
         </div>
 
@@ -74,7 +75,10 @@
                     <img class="profile-picture"
                         src="/home/michael/repos/Admin-Dashboard/pictures/Mochi-Ice-cream-WS-Thumbnail-500x500.jpeg"
                         alt="profile picture">
-                    <hi class="user-name">Michael Metcalf</hi>
+                    <div class="welcome">
+                        <p>Welcome back,</p>
+                        <p class="user-name">Michael Metcalf</p>
+                    </div>
                 </div>
                 <div class="bottom-left-header">
                     <button class="new">New</button>
@@ -92,7 +96,7 @@
                         <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
 
                         <div class="small-link-container">
-                            <i class="fa-regular fa-star"></i>                           <div class="im"></div>
+                            <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-eye"></i>
                             <i class="fa-solid fa-link"></i>
                         </div>
@@ -101,35 +105,46 @@
                     <h3 class="project-header">Cool project</h1>
                         <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
                         <div class="small-link-container">
-                            <div class="im"></div>
-                            <div class="im"></div>
-                            <div class="im"></div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-link"></i>
                         </div>
                 </div>
                 <div class="project">
                     <h3 class="project-header">Cool project</h1>
                         <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
-                        <div class="im"></div>
-                        <div class="im"></div>
-                        <div class="im"></div>
+                        <div class="small-link-container">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
                 </div>
                 <div class="project">
                     <h3 class="project-header">Cool project</h1>
                         <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
-                        <div class="im"></div>
-                        <div class="im"></div>
-                        <div class="im"></div>
+                        <div class="small-link-container">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
                 </div>
                 <div class="project">
                     <h3 class="project-header">Cool project</h1>
                         <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
-                        <div class="im"></div>
-                        <div class="im"></div>
-                        <div class="im"></div>
+                        <div class="small-link-container">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
                 </div>
                 <div class="project">
                     <h3 class="project-header">Cool project</h1>
                         <p class="project-info">Lorem ipsum dolor sit amet, nim id est laborum.</p>
+                        <div class="small-link-container">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-eye"></i>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
                 </div>
             </div>
 
@@ -162,9 +177,10 @@
                     <h3>Other links</h1>
                         <div class="trend">
                             <div class="social">
+                                <a href="https://github.com/MichaelMMet">
                                 <img class="social-logo"
                                     src="/home/michael/repos/Admin-Dashboard/pictures/GitHub-Mark/PNG/GitHub-Mark-64px.png"
-                                    alt="Github logo">
+                                    alt="Github logo" ></a>
                                 <p> Another place to view my projects</p>
                             </div>
                             <div class="social">
